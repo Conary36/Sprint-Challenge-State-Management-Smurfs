@@ -1,5 +1,14 @@
+body{
+  height: 100vh;
+  background-image: url('../images/smurfs-the-lost-village-4k-5k-ap-1440x900.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire*/
+}
+
 .App {
   text-align: center;
+ 
 }
 
 .App-logo {

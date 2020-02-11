@@ -2,15 +2,22 @@ import React, { useState } from 'react';
 import { postSmurf } from '../actions/action'
 import { connect } from 'react-redux'
 import styled from 'styled-components';
+import {Button} from 'reactstrap'
 
-// const Form = styled.form`
-//   display: flex;
-//   flex-direction: column;
-//   width: 50%;
-//   margin: 2% auto;
-//   background: black;
-// `;
-
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 5% auto;
+   
+`;
+const Input = styled.input`
+    opacity:0.5;
+  
+`
+const textColor = {
+    color: 'purple'
+}
 
 
 const SmurfForm = props => {
@@ -36,30 +43,31 @@ const SmurfForm = props => {
         })
     }
     return (
-        <form onSubmit={handleSubmit} className='inputFields'>
-
-            <input
+        
+        <Form onSubmit={handleSubmit} className='inputFields'>
+            
+            <Input
                 type='text'
                 name='name'
                 placeholder='Name of Smurf'
                 onChange={onChange}
             />
-            <input
+            <Input
                 type='text'
                 name='age'
                 placeholder='Age of Smurf'
                 onChange={onChange}
             />
-            <input
+            <Input
                 type='text'
                 name='height'
                 placeholder='Height of Smurf'
                 onChange={onChange}
             />
             
-
-            <button>Submit</button>
-        </form>
+            <Button outline style={textColor} color='secondary'>Submit</Button>
+        </Form>
+       
     )
 }
 
