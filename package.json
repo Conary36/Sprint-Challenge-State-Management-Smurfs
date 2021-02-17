@@ -4,7 +4,8 @@
   "description": "Redux Sprint Challenge",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",
